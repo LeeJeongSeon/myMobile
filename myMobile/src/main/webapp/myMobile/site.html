@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SWUP_수프</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="../include/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style type="text/css">
+.content > div {
+background-color: white;
+padding: 10pt;
+border: 7pt orange outset;
+margin: 10pt 0; 
+}
+img {
+width: 100%;
+}
+.ui-dialog-contain {
+max-width: 900px;
+margin: 0 auto 1em;
+}
+</style>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1>SUWP_수프</h1>
+			<a href="#menu_bright" data-theme="a">메뉴</a>
+		</div>
+		<div data-role="content" class="content">
+			<h4>Start-Up With Particular_수프와 함께하는 특별한 창업준비</h4>
+			<h2>온라인 마켓 추천</h2>
+			<h3>직접 쇼핑몰을 구상하고 만들거나 <br>
+			온라인 쇼핑몰 제작 업체에 의뢰하기 부담된다면 <br>
+			아래의 플랫폼들을 이용해보세요! </h3>
+			<hr>
+			<div>
+				<ul	data-role="listview">
+					<li><a href="#site1">네이버 스마트스토어</a></li>
+					<li><a href="#site2">위메프 파트너</a></li>
+					<li><a href="#site3">쿠팡 Wing</a></li>
+					<li><a href="#site4">카카오톡 스토어 판매자센터</a></li>
+					<li><a href="#site5">아이디어스 작가웹</a></li>
+				</ul>			
+			</div>
+			<marquee><h4>리스트를 누르면 해당 플랫폼에 대한 정보가 나옵니다.</h4></marquee>
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>&copy;SWUP</h4>
+		</div>
+		<div data-role="panel" id="menu_bright" data-display="overlay">
+			<form>
+				<h1>메뉴</h1>
+				<hr>
+				<div id="before">
+					<p>로그인이나 회원가입은 홈화면에서 시도해주세요!</p>
+				</div>
+				<div id="after"></div>
+				<h3>눈이 아플 땐</h3>
+				<a href="dark_site.html" data-role="button" data-theme="b">다크모드</a>
+				<hr>
+				<h3>바로 가기</h3>
+				<a href="index.html" data-role="button">홈</a>
+				<a href="prepare.html" data-role="button">창업 준비와 통계</a>
+				<a href="type.html" data-role="button">창업 유형</a>
+				<a href="online.html" data-role="button">온라인 스타트업</a>
+				<a href="from.html" data-role="button">출처 페이지</a>
+				<hr>
+				<a href="#" data-role="button" data-theme="b" data-rel="close">화면으로 돌아가기</a>
+			</form>
+		</div>
+	</div>
+	<div data-role="dialog" id="site1">
+			<div data-role="header" data-theme="b" data-position="fixed">
+				<h1>네이버 스마트스토어</h1>
+				<a href="https://sell.smartstore.naver.com/#/home/about" data-theme="a" class="ui-btn-right" target="_blank">방문하기</a>
+			</div>
+			<div data-role="content">
+				<img src="../images_for_myMobile/5-1.PNG">
+				<div data-role="collapsible">
+					<h3>네이버 스마트스토어의 혜택</h3>
+					<ul data-role="listview">
+						<li>온라인 상품 판매를 위한 제출서류 고지</li>
+						<li>윈도에 노출</li>
+						<li>구매안전서비스 이용확인증 제공</li>
+						<li>스토어 활동에 필요한 메뉴얼 제공</li>
+						<li>스토어 개설, 상품 등록, 판매 수수료 무료</li>
+						<li>스토어 개설부터 운영까지 온/오프라인 종합 교육 제공</li>
+					</ul>
+				</div>
+				<div data-role="collapsible">
+					<h3>네이버 스마트스토어의 여러 기능</h3>
+					<ul data-role="listview">
+						<li>네이버페이와 결제 연동</li>
+						<li>네이버 톡톡으로 고객 상담</li>
+						<li>애널리틱스로 트래픽 분석 지원</li>
+						<li>입점/등록/판매 수수료 무료</li>
+						<li>네이버 지도로 매장 위치 검색 가능</li>
+						<li>간편 사이트 등록</li>
+						<li>네이버 기능들과 스토어 연결</li>
+						<li>간단한 가격비교 연동</li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h4>&copy;SWUP</h4>
+			</div>
+	</div>
+	<div data-role="dialog" id="site2">
+			<div data-role="header" data-theme="b" data-position="fixed">
+				<h1>위메프 파트너</h1>
+				<a href="https://wpartner.wemakeprice.com/login" data-theme="a" class="ui-btn-right" target="_blank">방문하기</a>
+			</div>
+			<div data-role="content">
+				<img src="../images_for_myMobile/5-2.png">
+				<div data-role="collapsible">
+					<h3>위메프 파트너스의 혜택</h3>
+					<ul data-role="listview">
+						<li>신상품 홍보/양질의 구매후기 지원 이벤트</li>
+						<li>매출 향사을 위한 특가 가격 관리</li>
+						<li>투데이 특가 광고 이벤트</li>
+						<li>파트너스 활동에 필요한 메뉴얼 제공</li>
+					</ul>
+				</div>
+				<div data-role="collapsible">
+					<h3>위메프 파트너스의 여러 기능</h3>
+					<ul data-role="listview">
+						<li>위메프 광고물품 소개</li>
+						<li>제휴 파트너사 무료노출 프로모션</li>
+						<li>신규 파트너사 지원 프로그램</li>
+						<li>입점/제휴 상담 서비스</li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h4>&copy;SWUP</h4>
+			</div>
+	</div>
+	<div data-role="dialog" id="site3">
+			<div data-role="header" data-theme="b" data-position="fixed">
+				<h1>쿠팡 Wing</h1>
+				<a href="https://wing.coupang.com/login?returnUrl=https%3A%2F%2Fwing.coupang.com%2F" data-theme="a" class="ui-btn-right" target="_blank">방문하기</a>
+			</div>
+			<div data-role="content">
+				<img src="../images_for_myMobile/5-3.png">
+				<div data-role="collapsible">
+					<h3>쿠팡 Wing의 혜택</h3>
+					<ul data-role="listview">
+						<li>성과 리포트와 정산 안내</li>
+						<li>다양한 광고 제작 가능</li>
+						<li>높은 커미션으로 창출하는 더 많은 수익률</li>
+						<li>파트너스 활동에 필요한 가이드 제공</li>
+					</ul>
+				</div>
+				<div data-role="collapsible">
+					<h3>쿠팡 Wing의 여러 기능</h3>
+					<ul data-role="listview">
+						<li>트렌드 리포트 지원</li>
+						<li>간단한 광고 링크로 수익 창출</li>
+						<li>그래프로 수익 안내</li>
+						<li>신청 없이 수익 자동 지급</li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h4>&copy;SWUP</h4>
+			</div>
+	</div>
+	<div data-role="dialog" id="site4">
+			<div data-role="header" data-theme="b" data-position="fixed">
+				<h1>카카오톡 스토어 판매자센터</h1>
+				<a href="https://store-sell.kakao.com/" data-theme="a" class="ui-btn-right" target="_blank">방문하기</a>
+			</div>
+			<div data-role="content">
+				<img src="../images_for_myMobile/5-4.png">
+				<div data-role="collapsible">
+					<h3>톡스토어 판매자센터의 혜택</h3>
+					<ul data-role="listview">
+						<li>다양한 카카오쇼핑에서 판매 가능</li>
+						<li>커머스형 메세지 홍보</li>
+						<li>간편 결제 적용으로 카카오톡 내에서 구매부터 결제까지 가능</li>
+						<li>판매자를 위한 매뉴얼과 도움말 제공</li>
+					</ul>
+				</div>
+				<div data-role="collapsible">
+					<h3>톡스토어 판매자센터의 여러 기능</h3>
+					<ul data-role="listview">
+						<li>입점 절차에 대한 절차와 서류 안내</li>
+						<li>카카오 채널 연동</li>
+						<li>1:1 상당톡 기능</li>
+						<li>톡딜 설정으로 전시 영역에 노출</li>
+						<li>소문내면 할인 프로모션</li>
+						<li>카카오페이 결제 연동</li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h4>&copy;SWUP</h4>
+			</div>
+	</div>
+	<div data-role="dialog" id="site5">
+			<div data-role="header" data-theme="b" data-position="fixed">
+				<h1>아이디어스 작가웹</h1>
+				<a href="https://artist.idus.com/" data-theme="a" class="ui-btn-right" target="_blank">방문하기</a>
+			</div>
+			<div data-role="content">
+				<img src="../images_for_myMobile/5-5.png">
+				<div data-role="collapsible">
+					<h3>아이디어스 작가웹의 혜택</h3>
+					<ul data-role="listview">
+						<li>핸드메이드 원부자재 최저가로 구매 가능한 작가 스토어</li>
+						<li>명함, 로고, 전단 등 브랜드를 위한 디자인 서비스</li>
+						<li>온라인 마케팅, 손익관리, 법률, 서비스 등 다양한 교육</li>
+						<li>맞춤 컨설팅 및 판매 심화 교육</li>
+						<li>포토그래퍼 무료 촬영 대행</li>
+						<li>한진택배 제휴/기사님 방문 픽업</li>
+						<li>종합검진 일부지원</li>
+					</ul>
+				</div>
+				<div data-role="collapsible">
+					<h3>아이디어스 작가웹의 여러 기능</h3>
+					<ul data-role="listview">
+						<li>후원금 서비스</li>
+						<li>온/오프라인 클래스 판매 오픈</li>
+						<li>오프라인 매장/마켓 지원</li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h4>&copy;SWUP</h4>
+			</div>
+	</div>
+</body>
+</html>
